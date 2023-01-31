@@ -152,7 +152,10 @@
 }
 
 
-
+:root{
+  --footerBlue: #BAC7D7;
+  --black: #040506;
+}
 
 
 body {
