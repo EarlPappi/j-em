@@ -1,10 +1,10 @@
 import React from 'react';
-import Classes from './Wrapper.module.css'
+import classes from './Wrapper.module.css'
 
-function Wrapper() {
+function Wrapper({ children }) {
   return (
-    <div>
-        
+    <div className={classes.wrapperCon} >
+        { children }        
     </div>
   )
 }
