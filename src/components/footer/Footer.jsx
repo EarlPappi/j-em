@@ -57,11 +57,11 @@ function Footer() {
         </nav>
 
         <div>
-          <FacebookIcon/>
-          <InstagramIcon/>
-          <LinkedinIcon/>
-          <TwitterIcon/>
-          <YoutubeIcon/>
+          <a href="https://twwitter.com/earl_pappi" target='_blank'><FacebookIcon/></a>
+          <a href="https://twwitter.com/earl_pappi" target='_blank'><InstagramIcon/></a>
+          <a href="https://twwitter.com/earl_pappi" target='_blank'><LinkedinIcon/></a>
+          <a href="https://twwitter.com/earl_pappi" target='_blank'><TwitterIcon/></a>
+          <a href="https://twwitter.com/earl_pappi" target='_blank'><YoutubeIcon/></a>
         </div>
       </div>
     </div>
