@@ -1,0 +1,7 @@
+.bannerSectionCon, .bannerInnerCon{
+    height: 100vh;
+}
+
+.bannerInnerCon{
+    background-color: rgba(0, 0, 0, 0.321);
+}
