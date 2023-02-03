@@ -64,7 +64,7 @@ function BannerSection() {
                         <div style={{
                             textAlign: 'right'
                         }}>
-                            <img src={Logo} width='200px' alt='J-Em Logo'/>
+                            <img src={Logo} width='200px' alt='J-Em Logo' />
                         </div>
 
 
@@ -79,14 +79,24 @@ function BannerSection() {
 
 
                         {/* Banner Nav */}
-                        <div className={ classes.contentNav }>
+                        <div className={classes.contentNav}>
                             <nav>
                                 <Link to='/'>ACCUEIL</Link>
                                 <Link to='/'>RÉALISATIONS</Link>
                                 <Link to='/'>À PROPOS</Link>
                                 <Link to='/'>BLOG</Link>
                                 <Link to='/'>CONTACT-NOUS</Link>
+                                <Link to='/'>EN</Link>
                             </nav>
+
+                            <div style={{
+                                display: 'flex',
+                                gap: '3em',
+                                color: 'white'
+                            }}>
+                                <p>allo@j-em.ca</p>
+                                <p>418-670-2259</p>
+                            </div>
 
                         </div>
 
