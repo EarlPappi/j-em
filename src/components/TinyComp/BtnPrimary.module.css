@@ -1,0 +1,19 @@
+:root {
+    --footerBlue: #BAC7D7;
+    --black: #040506;
+    --hoverBg: #FFF8EB;
+}
+
+.btnPrimaryCon {
+    text-decoration: none;
+    border: 2px solid var(--black);
+    color: var(--black);
+    padding: 0.5em;
+
+}
+
+.btnPrimaryCon:hover{
+    border:white 2px solid;
+    color: white;
+
+}

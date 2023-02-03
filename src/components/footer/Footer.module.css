@@ -1,0 +1,116 @@
+:root {
+    --footerBlue: #BAC7D7;
+    --black: #040506;
+    --hoverBg: #FFF8EB;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.footerMainCon {}
+
+@media (min-width: 767px) {
+    .footerMainCon {
+        display: flex;
+    }
+}
+
+.blueBgCon {
+    background: var(--footerBlue);
+    padding: 2em 0;
+    padding-top: 4em;
+}
+
+@media (min-width: 767px) {
+    .blueBgCon {
+        width: 70%;
+    }
+}
+
+
+.blackBgCon {
+    background-color: var(--black);
+    padding: 4em;
+}
+
+@media (min-width: 767px) {
+    .blackBgCon {
+        width: 30%;
+    }
+}
+
+
+@media (min-width: 767px) {
+    .blueInnerDiv h2 {
+        font-weight: 500;
+        font-size: 2.5em;
+        padding: 0.5em 0;
+    }
+}
+
+@media (min-width: 767px) {
+    .blueInnerDiv div {
+        display: flex;
+        align-items: center;
+        gap: 2em;
+    }
+}
+
+
+
+@media (min-width: 767px) {
+    .blueInnerDiv a {
+        padding: 0.8em 2em;
+        font-size: 1em;
+    }
+
+    .blueInnerDiv p {
+        font-weight: 400;
+        font-size: 0.8em;
+    }
+}
+
+
+.footerTagline {
+    margin-top: 7em;
+    display: flex;
+    gap: 4em;
+}
+
+.footerTagline p {
+    font-weight: 300;
+    font-size: 0.7em;
+}
+
+.blackBgCon nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.2em;
+
+    text-align: right;
+}
+
+.blackBgCon nav a {
+    text-decoration: none;
+    color: white;
+    font-size: small;
+}
+
+.btnCon {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+.blackBgCon div{
+    margin: 2em 0;
+    margin-top: 4em;
+    display: flex;
+    gap: 2em;
+    justify-content: flex-end;
+}
+

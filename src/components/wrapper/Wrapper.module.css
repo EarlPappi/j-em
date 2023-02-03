@@ -1,0 +1,10 @@
+.wrapperCon{
+    width: 98%;
+    margin: 0 auto;
+}
+
+@media (min-width: 767px) {
+    .wrapperCon{
+        width: 95%;
+    }
+}
