@@ -61,11 +61,15 @@ function BannerSection() {
 
                     {/* content starts here */}
                     <div className={classes.contentCon}>
-                        <div>
-                            <img src={Logo} width='200px' />
+                        <div style={{
+                            textAlign: 'right'
+                        }}>
+                            <img src={Logo} width='200px' alt='J-Em Logo'/>
                         </div>
 
-                        <div>
+
+
+                        <div className={classes.contentTexts}>
                             <p>BIENVENUE CHEZ J-EM ÉVÈNEMENTS</p>
 
                             <h2>VOTRE PROJET, NOTRE RÉALITÉ</h2>
@@ -75,7 +79,7 @@ function BannerSection() {
 
 
                         {/* Banner Nav */}
-                        <div>
+                        <div className={ classes.contentNav }>
                             <nav>
                                 <Link to='/'>ACCUEIL</Link>
                                 <Link to='/'>RÉALISATIONS</Link>
@@ -85,7 +89,6 @@ function BannerSection() {
                             </nav>
 
                         </div>
-
 
 
                     </div>

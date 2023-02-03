@@ -57,11 +57,11 @@ function Footer() {
         </nav>
 
         <div>
-          <a href="https://twwitter.com/earl_pappi" target='_blank'><FacebookIcon/></a>
-          <a href="https://twwitter.com/earl_pappi" target='_blank'><InstagramIcon/></a>
-          <a href="https://twwitter.com/earl_pappi" target='_blank'><LinkedinIcon/></a>
-          <a href="https://twwitter.com/earl_pappi" target='_blank'><TwitterIcon/></a>
-          <a href="https://twwitter.com/earl_pappi" target='_blank'><YoutubeIcon/></a>
+          <a href="https://twitter.com/earl_pappi" rel='noreferrer' target='_blank'><FacebookIcon/></a>
+          <a href="https://twitter.com/earl_pappi" rel='noreferrer' target='_blank'><InstagramIcon/></a>
+          <a href="https://twitter.com/earl_pappi" rel='noreferrer' target='_blank'><LinkedinIcon/></a>
+          <a href="https://twitter.com/earl_pappi" rel='noreferrer' target='_blank'><TwitterIcon/></a>
+          <a href="https://twitter.com/earl_pappi" rel='noreferrer' target='_blank'><YoutubeIcon/></a>
         </div>
       </div>
     </div>
