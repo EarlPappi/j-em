@@ -1,7 +1,21 @@
 .bannerSectionCon, .bannerInnerCon{
     height: 100vh;
+    transition: background linear 1s;
 }
 
 .bannerInnerCon{
-    background-color: rgba(0, 0, 0, 0.321);
+    background-color: rgba(0, 0, 0, 0.483);
+    padding: 4em 2em;
+    display: flex;
+
+}
+
+.contentCon{
+    width: 90%;
+}
+.iconCon{
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
