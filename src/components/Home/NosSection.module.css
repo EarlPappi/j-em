@@ -1,0 +1,9 @@
+.nosMainCon{
+    background-color: #CBB1CF;
+}
+
+@media (min-width: 767px) {
+    .nosMainCon{
+        padding: 10% 0;
+   }
+}

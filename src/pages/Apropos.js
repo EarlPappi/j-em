@@ -1,8 +1,11 @@
 import React from 'react'
+import HeroSection from '../components/Apropos/HeroSection'
 
 function Apropos() {
   return (
-    <div>Apropos</div>
+    <div>
+      <HeroSection/>
+    </div>
   )
 }
 
