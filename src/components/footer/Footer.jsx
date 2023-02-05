@@ -48,13 +48,13 @@ function Footer() {
       {/* blackBg container */}
       <div className={classes.blackBgCon}>
 
-        <nav>
-          <Link to='/'>ACCUEIL</Link>
-          <Link to='/'>RÉALISATIONS</Link>
-          <Link to='/'>À PROPOS</Link>
-          <Link to='/'>BLOG</Link>
-          <Link to='/'>CONTACT-NOUS</Link>
-        </nav>
+      <nav>
+        <Link to='/'>ACCUEIL</Link>
+        <Link to='/services'>RÉALISATIONS</Link>
+        <Link to='/a-propos'>À PROPOS</Link>
+        <Link to='/blogue'>BLOG</Link>
+        <Link to='/contactez-nous'>CONTACT-NOUS</Link>
+      </nav>
 
         <div>
           <a href="https://twitter.com/earl_pappi" rel='noreferrer' target='_blank'><FacebookIcon/></a>

@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import classes from './BannerSection.module.css'
 import slide_1 from '../../assets/Home/Banners/slide_1.jpg';
 import slide_2 from '../../assets/Home/Banners/slide_2.jpg';
@@ -10,7 +10,9 @@ import { RxCaretLeft, RxCaretRight } from 'react-icons/rx'
 
 function BannerSection() {
     const [current, setCurrent] = useState(0);
+    const [intervalId, setIntervalId] = useState(null);
     const imgTray = [slide_1, slide_2, slide_3, slide_4]
+
 
 
 
@@ -21,18 +23,31 @@ function BannerSection() {
         setCurrent(current === imgTray.length - 1 ? 0 : current + 1);
     }, 3000)
 
+    useEffect(() => {
+      const id = setIntervalId(()=>{
+        setCurrent(current === imgTray.length - 1 ? 0 : current + 1);
+      }, 3000);
+      setIntervalId(id)
+    
+      return () => clearInterval(intervalId);
+    }, [])
+    
+
 
 
     const nextBg = () => {
-        setCurrent(current === imgTray.length - 1 ? 0 : current + 1);
-        clearTimeout(changeBg.current)
+        clearInterval(intervalId);
+        setCurrent((prevCurrent)=>prevCurrent === imgTray.length - 1 ? 0 : prevCurrent + 1);
+        // clearTimeout(changeBg.current)x
 
         console.log("Clicked Next");
     }
 
     const prevBg = () => {
-        setCurrent(current === 0 ? imgTray.length - 1 : current - 1);
-        clearTimeout(changeBg.current)
+        clearInterval(intervalId);
+        setCurrent((prevCurrent)=>
+            prevCurrent === 0 ? imgTray.length - 1 : prevCurrent - 1)
+        // clearTimeout(changeBg.current)
 
         console.log("Clicked Prev");
     }
@@ -82,11 +97,10 @@ function BannerSection() {
                         <div className={classes.contentNav}>
                             <nav>
                                 <Link to='/'>ACCUEIL</Link>
-                                <Link to='/'>RÉALISATIONS</Link>
-                                <Link to='/'>À PROPOS</Link>
-                                <Link to='/'>BLOG</Link>
-                                <Link to='/'>CONTACT-NOUS</Link>
-                                <Link to='/'>EN</Link>
+                                <Link to='/services'>RÉALISATIONS</Link>
+                                <Link to='/a-propos'>À PROPOS</Link>
+                                <Link to='/blogue'>BLOG</Link>
+                                <Link to='/contactez-nous'>CONTACT-NOUS</Link>
                             </nav>
 
                             <div style={{
