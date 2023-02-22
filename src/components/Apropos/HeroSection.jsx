@@ -29,9 +29,7 @@ function HeroSection() {
           </div>
         </InnerWrapper>
       </Wrapper>
-      <div className={ classes.floating } style={{
-        marginBottom: '-5%'
-      }}>
+      <div className={ classes.floating }>
         <img src={bottomCloud} alt="Floating Cloud" />
       </div>
     </div>
