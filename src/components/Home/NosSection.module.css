@@ -68,3 +68,14 @@
     }
 }
 
+
+
+.handCon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pcCon{
+    padding-top: 10em;
+}

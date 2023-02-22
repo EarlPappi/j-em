@@ -19,37 +19,47 @@ function BannerSection() {
 
     const changeBg = useRef();
 
-    changeBg.current = setTimeout(() => {
-        setCurrent(current === imgTray.length - 1 ? 0 : current + 1);
-    }, 3000)
+    // changeBg.current = setTimeout(() => {
+    //     setCurrent(current === imgTray.length - 1 ? 0 : current + 1);
+    // }, 3000)
 
+
+    // auto play 
     useEffect(() => {
-      const id = setIntervalId(()=>{
-        setCurrent(current === imgTray.length - 1 ? 0 : current + 1);
-      }, 3000);
-      setIntervalId(id)
-    
-      return () => clearInterval(intervalId);
-    }, [])
-    
+        const id = setInterval(() => {
+            setCurrent(current === imgTray.length - 1 ? 0 : current + 1);
+        }, 1000);
+        setIntervalId(id)
+
+        return () => clearInterval(id);
+    }, [current]);
 
 
-
+// next slide
     const nextBg = () => {
-        clearInterval(intervalId);
-        setCurrent((prevCurrent)=>prevCurrent === imgTray.length - 1 ? 0 : prevCurrent + 1);
+        setCurrent(current === imgTray.length - 1 ? 0 : current + 1);
         // clearTimeout(changeBg.current)x
 
         console.log("Clicked Next");
     }
 
+    // prev slide
     const prevBg = () => {
         clearInterval(intervalId);
-        setCurrent((prevCurrent)=>
-            prevCurrent === 0 ? imgTray.length - 1 : prevCurrent - 1)
+        setCurrent((prevCurrent) =>
+    prevCurrent === 0 ? imgTray.length - 1 : prevCurrent - 1)
+        
         // clearTimeout(changeBg.current)
-
         console.log("Clicked Prev");
+    }
+
+
+    const mouseOver = () => {
+        clearInterval(intervalId)
+    }
+
+    const mouseLeave = () => {
+        nextBg();
     }
 
 
@@ -59,13 +69,14 @@ function BannerSection() {
     return (
         <div>
             {/* background change */}
-            <div className={classes.bannerSectionCon} style={{
+            <div onMouseOver={()=> mouseOver()} onMouseLeave={()=> mouseLeave()}  className={classes.bannerSectionCon} style={{
                 backgroundImage: `url(${imgTray[current]})`,
                 backgroundSize: 'cover'
 
-            }}>
+            }}
+       >
                 {/* dark overlay */}
-                <div className={classes.bannerInnerCon}>
+                <div  className={classes.bannerInnerCon}>
 
                     {/* Arrow left */}
                     <div className={classes.iconCon}>

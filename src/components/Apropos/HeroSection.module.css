@@ -1,4 +1,28 @@
-.mainCon{
+.mainCon {
     height: 100vh;
     background-color: #F2DAB2;
+    padding-top: 10%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: 120% -70%;
+}
+
+.heroSection h1{
+    font-size: 3em;
+    font-weight: 400;
+    padding-bottom: .6em;
+}
+.heroSection p {
+    font-size: 10pt;
+    font-weight: 300;
+    width: 50%;
+    line-height: 160%;
+}
+
+.heroSection p span{
+    font-weight: bold;
+}
+
+.xp{
+    font-weight: bold !important;
+    padding-top: 4em;
 }

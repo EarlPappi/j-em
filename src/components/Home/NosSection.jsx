@@ -3,8 +3,10 @@ import InnerWrapper from '../wrapper/InnerWrapper'
 import Wrapper from '../wrapper/Wrapper'
 import classes from './NosSection.module.css';
 import cloud from '../../assets/Home/NosSection/cloud.png';
-
+import handshake from '../../assets/Home/NosSection/handshake.png'
+import pc from '../../assets/Home/NosSection/pc.png'
 import { realisations } from './realisations';
+import BtnPrimary from '../../components/TinyComp/BtnPrimary'
 
 function NosSection() {
 
@@ -48,8 +50,24 @@ function NosSection() {
                         })}
 
                     </div>
+                    <div className={classes.handCon}>
+                        <BtnPrimary To={'/'}>Voir Plus De Nos Realisation</BtnPrimary>
+
+                        <div>
+                            <img src={handshake} alt="" />
+                        </div>
+                    </div>
+
                 </InnerWrapper>
+
             </Wrapper>
+
+
+            <div className={ classes.pcCon }>
+                <img src={pc} alt="" />
+            </div>
+
+
         </div>
     )
 }
