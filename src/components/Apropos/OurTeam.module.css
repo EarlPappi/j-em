@@ -1,4 +1,11 @@
 .mainCon{
-    padding: 5% 0;
+    padding: 15% 0;
     background-color: #BAC7D7;
+}
+
+.innerCon h1{
+    width: 50%;
+    border-bottom: 2px solid black;
+    font-size: 4em;
+    font-weight: 400;
 }
