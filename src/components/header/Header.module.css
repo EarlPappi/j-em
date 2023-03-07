@@ -4,12 +4,15 @@
     justify-content: space-between;
     width: 90%;
     align-items: center;
+    z-index: 9999;
     
 }
 
 .headerCon nav {
     display: flex;
     gap: 2em;
+    position: sticky;
+    top: 0;
 }
 
 .headerCon nav a{
