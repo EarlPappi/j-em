@@ -16,7 +16,7 @@ export const TeamData = [
                 tel: '418-554-7464',
                 linkedin: 'https://linkedin.com/miracle'
             }
-        ],
+        ], 
         imgTray: [eva1, mario1]
 
     },

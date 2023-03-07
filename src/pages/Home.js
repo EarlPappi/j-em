@@ -8,7 +8,6 @@ function Home() {
     <>
       <BannerSection />
       <NosSection/>
-      <FilterComp/>
     </>
   )
 }
