@@ -1,12 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import classes from './SingleTeam.module.css'
+import { SunIcon } from '../../assets/Apropos/Icons';
 
 function SingleTeam({ singleTeam }) {
+  const [current, setCurrent] = useState(0);
+  
   return (
     <div>
 
       <div className={classes.singleTeamMainCon}>
         <div className={ classes.singleImgCon }>
+          <div style={{
+            position: 'absolute',
+            right: '8em',
+            top: '8em'
+          }}>
+            <SunIcon/>
+          </div>
             <img src={singleTeam.imgTray[0]} alt="" width='100%'/>
         </div>
 

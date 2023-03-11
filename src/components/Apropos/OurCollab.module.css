@@ -1,0 +1,19 @@
+.titleHead{
+    width: fit-content;
+    border-bottom: 2px solid black;
+    font-size: 3.5em;
+    font-weight: 400;
+}
+
+.collabCon{
+    background: #F2DAB2;
+    padding: 10em 0;
+}
+
+.collabCon p{
+    margin: 1.5em 0;
+    width: 80%;
+    font-weight: 300;
+    font-size: 1.2em;
+    line-height: 150%;
+}

@@ -3,9 +3,9 @@
     background-color: #BAC7D7;
 }
 
-.innerCon h1{
+.titleHead{
     width: 50%;
     border-bottom: 2px solid black;
-    font-size: 4em;
+    font-size: 3.5em;
     font-weight: 400;
 }

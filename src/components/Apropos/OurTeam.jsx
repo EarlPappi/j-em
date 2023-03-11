@@ -9,24 +9,31 @@ function OurTeam() {
 
 
     return (
-        <div className={classes.mainCon}>
-            <Wrapper>
-                <InnerWrapper>
-                    <div className={classes.innerCon}>
-                        <h1>VOS PROFESSIONNELS</h1>
-                    </div>
-                    <div style={{marginTop: '2em'}}>
-                        {TeamData.map((singleTeam) => {
-                            return (
+        <>
 
-                                <SingleTeam singleTeam={singleTeam} />
+            <div className={classes.mainCon}>
+                <Wrapper>
+                    <InnerWrapper>
+                        <div className={classes.innerCon}>
+                            <h1 className={classes.titleHead}>VOS PROFESSIONNELS</h1>
+                        </div>
+                        <div style={{ marginTop: '2em' }}>
+                            {TeamData.map((singleTeam) => {
+                                return (
 
-                            )
-                        })}
-                    </div>
-                </InnerWrapper>
-            </Wrapper>
-        </div>
+                                    <SingleTeam singleTeam={singleTeam} />
+
+                                )
+                            })}
+                        </div>
+
+
+                    </InnerWrapper>
+                </Wrapper>
+            </div>
+
+            
+        </>
     )
 }
 
