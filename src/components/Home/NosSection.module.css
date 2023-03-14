@@ -16,8 +16,6 @@
     display: flex;
 }
 
-.titleCon img {}
-
 @media (min-width: 768px) {
     .titleCon {
         display: flex;

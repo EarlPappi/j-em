@@ -21,9 +21,9 @@ function Footer() {
 
                 <div>
                   <BtnPrimary To='/'>
-                    <div className={ classes.btnCon }>
+                    <div className={classes.btnCon}>
                       <span> NOUS CONTACTER</span>
-                      <span><ArrowForwardIcon className={ classes.arrowForwardIcon }/></span>
+                      <span><ArrowForwardIcon className={classes.arrowForwardIcon} /></span>
                     </div>
                   </BtnPrimary>
 
@@ -48,20 +48,20 @@ function Footer() {
       {/* blackBg container */}
       <div className={classes.blackBgCon}>
 
-      <nav>
-        <Link to='/'>ACCUEIL</Link>
-        <Link to='/services'>RÉALISATIONS</Link>
-        <Link to='/a-propos'>À PROPOS</Link>
-        <Link to='/blogue'>BLOG</Link>
-        <Link to='/contactez-nous'>CONTACT-NOUS</Link>
-      </nav>
+        <nav>
+          <Link to='/'>ACCUEIL</Link>
+          <Link to='/services'>RÉALISATIONS</Link>
+          <Link to='/a-propos'>À PROPOS</Link>
+          <Link to='/blogue'>BLOG</Link>
+          <Link to='/contactez-nous'>CONTACT-NOUS</Link>
+        </nav>
 
         <div>
-          <a href="https://twitter.com/earl_pappi" rel='noreferrer' target='_blank'><FacebookIcon/></a>
-          <a href="https://twitter.com/earl_pappi" rel='noreferrer' target='_blank'><InstagramIcon/></a>
-          <a href="https://twitter.com/earl_pappi" rel='noreferrer' target='_blank'><LinkedinIcon/></a>
-          <a href="https://twitter.com/earl_pappi" rel='noreferrer' target='_blank'><TwitterIcon/></a>
-          <a href="https://twitter.com/earl_pappi" rel='noreferrer' target='_blank'><YoutubeIcon/></a>
+          <a href="https://twitter.com/earl_pappi" rel='noreferrer' target='_blank'><FacebookIcon /></a>
+          <a href="https://twitter.com/earl_pappi" rel='noreferrer' target='_blank'><InstagramIcon /></a>
+          <a href="https://twitter.com/earl_pappi" rel='noreferrer' target='_blank'><LinkedinIcon /></a>
+          <a href="https://twitter.com/earl_pappi" rel='noreferrer' target='_blank'><TwitterIcon /></a>
+          <a href="https://twitter.com/earl_pappi" rel='noreferrer' target='_blank'><YoutubeIcon /></a>
         </div>
       </div>
     </div>
