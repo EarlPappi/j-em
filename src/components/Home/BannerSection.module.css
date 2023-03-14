@@ -1,7 +1,7 @@
 .bannerSectionCon,
 .bannerInnerCon {
     height: 100vh;
-    /* transition: background linear 1s; */
+    transition: background linear 1s;
 }
 
 .bannerInnerCon {
@@ -26,32 +26,77 @@
     align-items: center;
 }
 
+
+
 .contentTexts {
-    max-width: 40%;
+    max-width: 100%;
+    text-align: center;
     display: flex;
     flex-direction: column;
     gap: 1.5em;
 }
 
+@media (min-width: 768px) {
+    .contentTexts {
+        max-width: 80%;
+        text-align: left
+    }
+}
+
+@media (min-width: 1024px) {
+    .contentTexts {
+        max-width: 60%;
+    }
+}
+
+
+
 .contentTexts p {
     color: white;
-    
     font-weight: 300;
 }
 
+
+
 .contentTexts h2 {
     color: white;
-    font-size: 3.5em;
+    font-size: 2.5em;
     font-weight: 400;
+}
+
+@media (min-width: 768px) {
+    .contentTexts h2{
+        
+    font-size: 3.5em;
+    }
+}
+
+@media (min-width: 1024px) {
+    .contentTexts h2{
+       
+    }
 }
 
 .contentNav {
     position: relative;
     top: 10em;
+    display: none;
     border-bottom: 1px solid white;
     padding-bottom: 2em;
-    display: flex;
     justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+    .contentNav {
+   
+       
+    }
+}
+
+@media (min-width: 1024px) {
+    .contentNav {
+         display: flex;
+    }
 }
 
 .contentNav nav {
@@ -62,10 +107,10 @@
 }
 
 
-.contentNav nav a, .contentNav p {
+.contentNav nav a,
+.contentNav p {
     text-decoration: none;
     color: white;
     font-size: 0.8em;
     font-weight: 400;
 }
-

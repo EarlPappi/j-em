@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import classes from './BannerSection.module.css'
 import slide_1 from '../../assets/Home/Banners/slide_1.jpg';
 import slide_2 from '../../assets/Home/Banners/slide_2.jpg';
@@ -13,12 +13,6 @@ function BannerSection() {
     const [intervalId, setIntervalId] = useState(null);
     const imgTray = [slide_1, slide_2, slide_3, slide_4]
 
-
-
-
-
-    const changeBg = useRef();
-
     // changeBg.current = setTimeout(() => {
     //     setCurrent(current === imgTray.length - 1 ? 0 : current + 1);
     // }, 3000)
@@ -28,19 +22,17 @@ function BannerSection() {
     useEffect(() => {
         const id = setInterval(() => {
             setCurrent(current === imgTray.length - 1 ? 0 : current + 1);
-        }, 1000);
+        }, 3000);
         setIntervalId(id)
 
         return () => clearInterval(id);
+        // eslint-disable-next-line
     }, [current]);
 
 
 // next slide
     const nextBg = () => {
         setCurrent(current === imgTray.length - 1 ? 0 : current + 1);
-        // clearTimeout(changeBg.current)x
-
-        console.log("Clicked Next");
     }
 
     // prev slide
@@ -48,19 +40,16 @@ function BannerSection() {
         clearInterval(intervalId);
         setCurrent((prevCurrent) =>
     prevCurrent === 0 ? imgTray.length - 1 : prevCurrent - 1)
-        
-        // clearTimeout(changeBg.current)
-        console.log("Clicked Prev");
     }
 
 
-    const mouseOver = () => {
-        clearInterval(intervalId)
-    }
-
-    const mouseLeave = () => {
-        nextBg();
-    }
+//     const mouseOver = () => {
+//         clearInterval(intervalId)
+//     }
+// 
+//     const mouseLeave = () => {
+//         nextBg();
+//     }
 
 
     // changeBg();
@@ -69,7 +58,7 @@ function BannerSection() {
     return (
         <div>
             {/* background change */}
-            <div onMouseOver={()=> mouseOver()} onMouseLeave={()=> mouseLeave()}  className={classes.bannerSectionCon} style={{
+            <div className={classes.bannerSectionCon} style={{
                 backgroundImage: `url(${imgTray[current]})`,
                 backgroundSize: 'cover'
 

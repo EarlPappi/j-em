@@ -54,7 +54,7 @@ function NosSection() {
                         <BtnPrimary To={'/'}>Voir Plus De Nos Realisation</BtnPrimary>
 
                         <div>
-                            <img src={handshake} alt="" />
+                            <img src={handshake} alt="" width='100%'/>
                         </div>
                     </div>
 
@@ -64,7 +64,7 @@ function NosSection() {
 
 
             <div className={ classes.pcCon }>
-                <img src={pc} alt="" />
+                <img src={pc} alt="" width=""/>
             </div>
 
 

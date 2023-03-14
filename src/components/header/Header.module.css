@@ -1,11 +1,17 @@
 .headerCon {
     position: absolute;
-    display: flex;
+    display: none;
     justify-content: space-between;
     width: 90%;
     align-items: center;
     z-index: 9999;
     
+}
+
+@media (min-width: 768px) {
+    .headerCon{
+        display: flex;
+    }
 }
 
 .headerCon nav {
