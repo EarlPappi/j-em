@@ -10,7 +10,7 @@
     width: 100%;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 1024px) {
     .footerMainCon {
         display: flex;
     }
@@ -22,7 +22,7 @@
     padding-top: 4em;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 1024px) {
     .blueBgCon {
         width: 70%;
     }
@@ -34,14 +34,37 @@
     padding: 4em;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 1024px) {
     .blackBgCon {
         width: 30%;
     }
 }
 
+.blueInnerDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
 
-@media (min-width: 767px) {
+.mobC{
+    margin-top: 1em;
+    display: flex;
+    gap: 1em;
+}
+
+@media (min-width: 768px) {
+    .blueInnerDiv {
+        display: block;
+    }
+
+    .mobC{
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 768px) {
     .blueInnerDiv h2 {
         font-weight: 500;
         font-size: 2.5em;
@@ -49,7 +72,7 @@
     }
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
     .blueInnerDiv div {
         display: flex;
         align-items: center;
@@ -59,7 +82,7 @@
 
 
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
     .blueInnerDiv a {
         padding: 0.8em 2em;
         font-size: 1em;
@@ -86,10 +109,24 @@
 .blackBgCon nav {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 1.2em;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+}
 
-    text-align: right;
+
+@media (min-width: 768px) {
+    .blackBgCon nav {
+        justify-content: space-between;
+        gap: 1.2em;
+        text-align: right;
+    }
+}
+
+@media (min-width: 1024px) {
+    .blackBgCon nav {
+        flex-direction: column
+    }
 }
 
 .blackBgCon nav a {
@@ -98,17 +135,24 @@
     font-size: small;
 }
 
+
+
 .btnCon {
     display: flex;
     gap: 1em;
     align-items: center;
 }
 
-.blackBgCon div{
+.blackBgCon div {
     margin: 2em 0;
     margin-top: 4em;
     display: flex;
     gap: 2em;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
+@media (min-width: 1024px) {
+    .blackBgCon div {
+        justify-content: flex-end;
+    }
+}

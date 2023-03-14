@@ -1,0 +1,17 @@
+.errorMainCon{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4em;
+}
+
+.errorMainCon a{
+    text-decoration: none;
+    background-color: #4393FF;
+    color: white;
+    padding: 1em 5em ;
+    border-radius: 10px;
+}

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import classes from './BannerSection.module.css'
 import slide_1 from '../../assets/Home/Banners/slide_1.jpg';
 import slide_2 from '../../assets/Home/Banners/slide_2.jpg';
@@ -13,44 +13,43 @@ function BannerSection() {
     const [intervalId, setIntervalId] = useState(null);
     const imgTray = [slide_1, slide_2, slide_3, slide_4]
 
+    // changeBg.current = setTimeout(() => {
+    //     setCurrent(current === imgTray.length - 1 ? 0 : current + 1);
+    // }, 3000)
 
 
-
-
-    const changeBg = useRef();
-
-    changeBg.current = setTimeout(() => {
-        setCurrent(current === imgTray.length - 1 ? 0 : current + 1);
-    }, 3000)
-
+    // auto play 
     useEffect(() => {
-      const id = setIntervalId(()=>{
-        setCurrent(current === imgTray.length - 1 ? 0 : current + 1);
-      }, 3000);
-      setIntervalId(id)
-    
-      return () => clearInterval(intervalId);
-    }, [])
-    
+        const id = setInterval(() => {
+            setCurrent(current === imgTray.length - 1 ? 0 : current + 1);
+        }, 3000);
+        setIntervalId(id)
+
+        return () => clearInterval(id);
+        // eslint-disable-next-line
+    }, [current]);
 
 
-
+// next slide
     const nextBg = () => {
-        clearInterval(intervalId);
-        setCurrent((prevCurrent)=>prevCurrent === imgTray.length - 1 ? 0 : prevCurrent + 1);
-        // clearTimeout(changeBg.current)x
-
-        console.log("Clicked Next");
+        setCurrent(current === imgTray.length - 1 ? 0 : current + 1);
     }
 
+    // prev slide
     const prevBg = () => {
         clearInterval(intervalId);
-        setCurrent((prevCurrent)=>
-            prevCurrent === 0 ? imgTray.length - 1 : prevCurrent - 1)
-        // clearTimeout(changeBg.current)
-
-        console.log("Clicked Prev");
+        setCurrent((prevCurrent) =>
+    prevCurrent === 0 ? imgTray.length - 1 : prevCurrent - 1)
     }
+
+
+//     const mouseOver = () => {
+//         clearInterval(intervalId)
+//     }
+// 
+//     const mouseLeave = () => {
+//         nextBg();
+//     }
 
 
     // changeBg();
@@ -63,9 +62,10 @@ function BannerSection() {
                 backgroundImage: `url(${imgTray[current]})`,
                 backgroundSize: 'cover'
 
-            }}>
+            }}
+       >
                 {/* dark overlay */}
-                <div className={classes.bannerInnerCon}>
+                <div  className={classes.bannerInnerCon}>
 
                     {/* Arrow left */}
                     <div className={classes.iconCon}>
