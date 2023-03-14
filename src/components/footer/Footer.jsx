@@ -27,8 +27,10 @@ function Footer() {
                     </div>
                   </BtnPrimary>
 
-                  <p>allo@j-em.ca</p>
-                  <p>418-670-2259</p>
+                  <div className={ classes.mobC }>
+                    <p>allo@j-em.ca</p>
+                    <p>418-670-2259</p>
+                  </div>
                 </div>
               </div>
             </Wrapper>

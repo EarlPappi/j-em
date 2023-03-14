@@ -5,6 +5,7 @@
 }
 
 .btnPrimaryCon {
+    display: inline-block;
     text-decoration: none;
     border: 2px solid var(--black);
     color: var(--black);
