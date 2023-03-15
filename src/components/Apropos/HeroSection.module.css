@@ -3,19 +3,50 @@
     background-color: #F2DAB2;
     padding-top: 10%;
     background-repeat: no-repeat, no-repeat;
+    background-position: -300% -150%;
+}
+
+@media (min-width: 768px) {
+    .mainCon{
+        background-position: 160% -120%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .mainCon{
     background-position: 120% -70%;
+    }
 }
 
 .heroSection h1{
-    font-size: 3em;
+    font-size: 2.3em;
     font-weight: 400;
     padding-bottom: .6em;
 }
+
+@media (min-width: 768px) {
+    .heroSection h1{       
+    font-size: 3em;
+    }
+}
+
 .heroSection p {
     font-size: 10pt;
     font-weight: 300;
-    width: 50%;
+    width: 90%;
     line-height: 160%;
+}
+
+@media (min-width: 768px) {
+    .heroSection p{
+        width: 70%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .heroSection p{
+        width: 50%;
+    }
 }
 
 .heroSection p span{
@@ -29,4 +60,14 @@
 
 .floating{
     padding: 2em 0;
+}
+
+.floating img{
+    width: 80%;
+}
+
+@media (min-width: 768px) {
+    .floating img{
+        width: 60%;
+    }
 }
