@@ -30,7 +30,7 @@ function HeroSection() {
         </InnerWrapper>
       </Wrapper>
       <div className={ classes.floating }>
-        <img src={bottomCloud} alt="Floating Cloud" />
+        <img src={bottomCloud} alt="Floating Cloud" width='20%'/>
       </div>
     </div>
   )

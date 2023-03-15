@@ -10,11 +10,7 @@ function SingleTeam({ singleTeam }) {
 
       <div className={classes.singleTeamMainCon}>
         <div className={ classes.singleImgCon }>
-          <div style={{
-            position: 'absolute',
-            right: '8em',
-            top: '8em'
-          }}>
+          <div className={ classes.singleSun } >
             <SunIcon/>
           </div>
             <img src={singleTeam.imgTray[0]} alt="" width='100%'/>

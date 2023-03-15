@@ -6,6 +6,12 @@
 .titleHead{
     width: 50%;
     border-bottom: 2px solid black;
-    font-size: 3.5em;
+    font-size: 1.8em;
     font-weight: 400;
+}
+
+@media (min-width: 768px) {
+    .titleHead{
+        font-size: 3.5em;
+    }
 }
