@@ -38,7 +38,7 @@ function Footer() {
 
 
           {/* Footer Tagline */}
-          <div className={classes.footerTagline}>
+          <div className={classes.footerTaglineD}>
             <p>©2023 - J-EM Événements</p>
             <p>Conception web par Mikael Design</p>
           </div>

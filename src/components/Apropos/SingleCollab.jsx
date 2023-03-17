@@ -1,8 +1,15 @@
 import React from 'react'
+import classes from './SingleCollab.module.css'
 
-function SingleCollab() {
+function SingleCollab({collab}) {
   return (
-    <div>SingleCollab</div>
+    <div className={ classes.collabCOn }>
+      <div>
+        <img src={ collab.img } alt="" width='100%'/>
+      </div>
+
+      <p>{ collab.title }</p>
+    </div>
   )
 }
 

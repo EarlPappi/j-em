@@ -95,16 +95,24 @@
 }
 
 
-.footerTagline {
+.footerTaglineD {
     margin-top: 7em;
-    display: flex;
+    display: none;
     gap: 4em;
 }
 
-.footerTagline p {
+.footerTaglineD p {
     font-weight: 300;
     font-size: 0.7em;
 }
+
+@media (min-width: 1024px) {
+    .footerTaglineD{
+        display: flex;
+    }
+}
+
+
 
 .blackBgCon nav {
     display: flex;
@@ -125,7 +133,8 @@
 
 @media (min-width: 1024px) {
     .blackBgCon nav {
-        flex-direction: column
+        flex-direction: column;
+        align-items: flex-end;
     }
 }
 
