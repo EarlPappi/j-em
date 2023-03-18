@@ -1,0 +1,30 @@
+:root{    
+    --black: #040506;
+}
+
+*{
+    color: var(--black);
+}
+
+.contactMainCon{
+    min-height: 100vh;
+    background-color: #CBB1CF;
+    padding-top: 8%;
+}
+
+.contHead{
+display: flex;
+gap: 2em;
+justify-content: space-between;
+align-items: center;
+}
+
+.contHead div h2{
+    font-size: 3.5em;
+    font-weight: 500;
+}
+
+.contHead div p{
+    font-weight: 300;
+    margin-bottom: 1em;
+}
