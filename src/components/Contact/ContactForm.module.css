@@ -1,0 +1,62 @@
+:root {
+    --black: #040506;
+}
+
+.formCon input,
+.formCon label,
+.formCon textarea {
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    margin: 2em 0;
+    margin-top: 0;
+    padding: .8em 0;
+}
+
+.formCon input {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--black);
+
+}
+
+.formCon input::placeholder {
+    color: var(--black);
+}
+
+.formCon input:focus {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--black);
+}
+
+.formCon label{
+    margin: 0;
+}
+
+ .formCon textarea{
+    margin: 0;
+    border: 2px solid var(--black);
+    padding: .5em;
+ }
+
+ .formCon textarea:focus{
+    outline: none;
+ }
+
+ .formCon button{
+    background-color: transparent;
+    margin-top: 2em;
+    padding: 1em 2em;
+    border: 2px solid var(--black);
+    
+ }
+
+ @media (min-width: 1024px) {
+    .formCon div{
+        display: flex;
+        justify-content: space-between;
+        gap: 4em;
+    }
+ }
+

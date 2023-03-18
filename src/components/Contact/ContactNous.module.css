@@ -9,7 +9,7 @@
 .contactMainCon {
     min-height: 100vh;
     background-color: #CBB1CF;
-    padding-top: 8%;
+    padding: 8% 0;
 }
 
 /* rough fixxxx */
@@ -88,6 +88,10 @@
         width: 25%;
         flex-direction: column;
         justify-content: flex-start;
+    }
+
+    .formHold{
+        width: 70%;
     }
 }
 
