@@ -12,22 +12,27 @@ import Error404 from './pages/Error404';
 function App() {
   return (
     <>
-    <Header/>
+      <div style={{
+        position: 'sticky',
+        top: '0px'
+      }}>
+        <Header />
+      </div>
 
-    <Routes>
-      <Route path='/' element={ <Home/> }/>
-      <Route path='/a-propos' element={ <Apropos/> }/>
-      <Route path='/contactez-nous' element={ <Contact/> }/>
-      <Route path='/blogue' element={ <Blogue/> }/>
-      <Route path='/services' element={ <Services/> }/>
-      <Route path='/*' element={ <Error404/> }/>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/a-propos' element={<Apropos />} />
+        <Route path='/contactez-nous' element={<Contact />} />
+        <Route path='/blogue' element={<Blogue />} />
+        <Route path='/services' element={<Services />} />
+        <Route path='/*' element={<Error404 />} />
 
 
-    </Routes>
+      </Routes>
 
-    <Footer/>
-    
-    
+      <Footer />
+
+
     </>
   );
 }

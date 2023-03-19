@@ -1,0 +1,113 @@
+:root {
+    --black: #040506;
+}
+
+* {
+    color: var(--black);
+}
+
+.contactMainCon {
+    min-height: 100vh;
+    background-color: #CBB1CF;
+    padding: 8% 0;
+}
+
+/* rough fixxxx */
+@media (max-width: 767px) {
+    .contHead img {
+        width: 80%;
+    }
+
+    .contHead p {
+        font-size: .7em;
+    }
+}
+
+.contHead {
+    display: flex;
+    gap: 2em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contHead div h2 {
+    font-size: 1em;
+    font-weight: 500;
+}
+
+@media (min-width: 768px) {
+    .contHead div h2 {
+        font-size: 2em;
+    }
+}
+
+@media (min-width: 1024px) {
+    .contHead div h2 {
+        font-size: 3.5em;
+    }
+}
+
+
+.contHead div p {
+    font-weight: 300;
+    margin-bottom: 1em;
+}
+
+.formCon {
+    display: flex;
+    gap: 10em;
+    margin-top: 5em;
+    flex-direction: column-reverse;
+}
+
+@media (min-width: 768px) {
+    .formCon {}
+}
+
+@media (min-width: 1024px) {
+    .formCon {
+        flex-direction: row;
+    }
+}
+
+.sideCon {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .sideCon {
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+}
+
+@media (min-width: 1024px) {
+    .sideCon {
+        width: 25%;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .formHold{
+        width: 70%;
+    }
+}
+
+.sideCon div {
+    border-top: 2px solid var(--black);
+    padding: 1em 0;
+    margin-bottom: 2em;
+}
+
+.sideCon div h3 {
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.sideCon div p {
+    font-weight: 300;
+    line-height: 150%;
+    margin-top: .4em;
+}
