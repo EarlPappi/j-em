@@ -18,20 +18,24 @@ function Blog() {
         <InnerWrapper>
           <InnerWrapper>
             <h1>BLOGUE</h1>
-            <div className={classes.catCon}>
-              {blogCat.map((cat) => {
-                return (
-                  <p style={{
-                    borderBottom: active === cat ? '2px solid black' : 'none',
-                    background: active === cat ? '#f1f4f9' : 'transparent',
-                  }} className={classes.catTitle} onClick={() => {
-                    setActive(cat);
-                    console.log(active)
-                  }}>{cat}</p>
-                )
-              })}
 
+            <div className={ classes.catMainCon }>
+              <div className={classes.catCon}>
+                {blogCat.map((cat) => {
+                  return (
+                    <p style={{
+                      borderBottom: active === cat ? '2px solid black' : 'none',
+                      background: active === cat ? '#f1f4f9' : 'transparent',
+                    }} className={classes.catTitle} onClick={() => {
+                      setActive(cat);
+                      console.log(active)
+                    }}>{cat}</p>
+                  )
+                })}
+
+              </div>
             </div>
+
 
 
 

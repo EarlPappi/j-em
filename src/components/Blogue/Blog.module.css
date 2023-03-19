@@ -16,17 +16,23 @@
     }
 }
 
+
 .catCon {
     display: flex;
     gap: .5em;
     justify-content: center;
     flex-wrap: wrap;
 }
+.catMainCon{
+    border-bottom: black 2px solid;
+    padding-bottom: 1.2em;
+}
 
 @media (min-width: 768px) {
     .catCon {
         gap: 1em;
     }
+
 }
 
 .catTitle {
