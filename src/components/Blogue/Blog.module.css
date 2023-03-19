@@ -1,0 +1,48 @@
+.blogMainCon {
+    min-height: 100vh;
+    padding-top: 8%;
+    background: #BAC7D7;
+}
+
+.blogMainCon h1 {
+    font-size: 2.3em;
+    font-weight: 400;
+    padding-bottom: .6em;
+}
+
+@media (min-width: 768px) {
+    .blogMainCon h1 {
+        font-size: 3em;
+    }
+}
+
+.catCon {
+    display: flex;
+    gap: .5em;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+    .catCon {
+        gap: 1em;
+    }
+}
+
+.catTitle {
+    text-transform: uppercase;
+    padding: .2em;
+    font-size: .6em;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .catTitle{
+        padding: .5em;
+        font-size: 1em;
+    }
+}
+
+.catTitle:hover {
+    background-color: #BAC7D7;
+}

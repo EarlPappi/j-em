@@ -20,7 +20,7 @@ function Footer() {
                 <h2>PASSER À L’ACTION</h2>
 
                 <div>
-                  <BtnPrimary To='/'>
+                  <BtnPrimary To='/contactez-nous'>
                     <div className={classes.btnCon}>
                       <span> NOUS CONTACTER</span>
                       <span><ArrowForwardIcon className={classes.arrowForwardIcon} /></span>
