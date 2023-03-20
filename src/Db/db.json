@@ -1,0 +1,52 @@
+{
+    "blogs":[
+        {
+            "id":0,
+            "title": "2024 Mercedes-Benz GLA, GLB: Reworked Styling, Mild-Hybrid Powertrain",
+            "body": "The exterior styling for the GLA and GLB gets minor tweaks for the 2024 model year. Both models receive a revised front bumper with a new radiator grille and standard LED headlights; out back, they get standard LED taillights. Buyers will also get new 18- and 20-inch wheel options to choose from, and a new Spectral Blue Metallic joins the exterior color lineup. These updates also apply to the AMG variants, but the AMG logo is now mounted on the hood, and new 19- and 20-inch alloy wheels are available. <br/> The interiors for both models have also been updated for the 2024 model year. The cabin now features two 10.25-inch screens: a central one for the latest MBUX infotainment system, which now features standard wireless Apple CarPlay and Android Auto and voice controls, and a second screen for fully digital instrumentation. The steering wheel comes with standard Nappa leather, and the AMG Line Package’s interior now has an optional heated steering wheel; AMG models have a redesigned steering wheel. Also newly standard are high-beam assist, a 360-degree camera, active parking assist, and the Mirror and Keyless Go packages. <br/> Performance for the base 2024 GLA and GLB comes from a 221-horsepower, turbocharged 2.0-liter four-cylinder engine that now features a 48-volt mild-hybrid system, which temporarily adds 13 more horsepower during acceleration and allows for the combustion engine to power off for coasting. Meanwhile, AMG variants get an upgraded 302-hp, turbocharged 2.0-liter four-cylinder with the same mild-hybrid system. Mercedes-Benz claims the AMG GLA35 and GLB35 trims can make the sprint to 60 mph in 5.1 and 5.4 seconds, respectively. The GLA and GLB come with a standard nine-speed automatic transmission, while the AMG variants get an eight-speed dual-clutch automatic. Front-wheel drive is standard on the GLA220 and GLB250; all-wheel drive is standard on the GLA250 and available on the GLB250. AMG models get AWD standard.",
+            "author": "Earl Pappi",
+            "imgUrl": "https://images.cars.com/cldstatic/wp-content/uploads/mercedes-benz-gla-glb-class-2024-exterior-oem-07.jpg",
+            "category": "auto"
+        },
+        {
+            "id":1,
+            "title": "2021 Ford F-150 Recalled for Failing Windshield Wipers Again",
+            "body": "We encountered myriad issues in our time with our long-term 2021 Ford F-150 test vehicle, among them being issues with our windshield wipers. Unfortunately, the wipers are proving to be a problematic component for the truck — it’s the root cause for the automaker’s latest recall for its most popular model. <br/> Affected vehicles include more than 222,000 model-year 2021 F-150s, and it expands on a previous recall from April 2022. The windshield wiper arms may break, causing the wipers to fail. The ensuing reduced visibility in certain conditions can increase the risk of a crash. <br/> The solution for owners is simple: Dealers will simply inspect and replace the wiper arms, as necessary, for free. Ford will begin notifying owners March 27, but those with further questions can call Ford at 866-436-7332 (Ford’s number for this recall is 23S10), the National Highway Traffic Safety Administration’s vehicle-safety hotline at 888-327-4236, or visit its website to check their vehicle identification number and learn more.",
+            "author": "Earl Pappi",
+            "imgUrl": "https://images.cars.com/cldstatic/wp-content/uploads/ford-f-150-hybrid-supercrew-limited-2021-05-exterior-dynamic-profile-scaled.jpg",
+            "category": "auto"
+        },
+        {
+            "id":2,
+            "title": "Futures fall as Credit Suisse rescue, liquidity steps fail to quell bank scare",
+            "body": "Big U.S. banks like JP Morgan Chase & Co (JPM.N), Citigroup (C.N) and Morgan Stanley (MS.N) slumped over 1% premarket.Regional banks First Republic Bank (FRC.N) and Western Alliance (WAL.N) were down 21.6% and 5.3%, respectively, while PacWest Bancorp (PACW.O) was up 3.2%. The S&P Banking index (.SPXBK) and the KBW Regional Banking index (.KRX) on Friday logged their largest two-week drop since March 2020.Treasury yields edged lower on Monday, with investors flocking to bonds on worries over the interest-rate path the U.S. central bank may take. At 4:35 a.m. ET, Dow e-minis were down 316 points, or 0.99%, S&P 500 e-minis were down 38 points, or 0.96%, and Nasdaq 100 e-minis were down 89 points, or 0.7%. Economic data such as existing home sales, weekly jobless claims and durable goods will also be on investor's radar for the week.",
+            "author": " Pappi Earl",
+            "imgUrl": "https://www.reuters.com/resizer/TQndcFPLlbL0-47zPOd8xWwU0-E=/960x0/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/Q26SJYFYWFKHZDQVKE35INR62I.jpg",
+            "category": "finance"
+        },
+        {
+            "id":3,
+            "title": "French insurer AXA has about $640 mln exposure to Credit Suisse",
+            "body": "PARIS, March 20 (Reuters) - French insurer AXA (AXAF.PA) had a limited exposure of about 0.6 billion euros ($639.5 million) to Swiss bank Credit Suisse (CSGN.S), it said on Monday. AXA has no exposure to Credit Suisse AT1s or to Credit Suisse equity. The group has limited exposure to Credit Suisse of circa 0.6 billion euros, comprising covered bonds and senior bonds. AXA has less than 20 million euro exposure to bank AT1s, the insurer said in an emailed statement.",
+            "author": "Reuters",
+            "imgUrl": "https://www.reuters.com/resizer/YT-k8ebWqsyBS40LboYPmZ_LbRQ=/960x0/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/633GTH6JORPXTA6N5F3DDFOU2Y.jpg",
+            "category": "finance"
+        },
+        {
+            "id":4,
+            "title": "Sam Bankman-Fried, U.S. prosecutors near new bail agreement",
+            "body": "NEW YORK, March 17 (Reuters) - Lawyers for Sam Bankman-Fried are nearing an agreement with U.S. prosecutors on revised bail conditions for the indicted FTX cryptocurrency exchange founder, who is trying to convince a skeptical judge he should remain free. In a letter filed on Friday night in Manhattan federal court, Bankman-Fried's lawyer Christian Everdell said both sides believed they were 'close to a resolution', and expect to formally propose new restrictions by next week.",
+            "author": "Reuters",
+            "imgUrl": "https://www.reuters.com/resizer/U55iDnS-h-wu5dk0el6gJsoWkhM=/960x0/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/XDB3YTY6E5IC7IDAOGIRQFRZUQ.jpg",
+            "category": "tech"
+        },
+        {
+            "id":5,
+            "title": "Bitcoin near 9-month high as bank turmoil sparks rally",
+            "body": "At the time of writing, the leading cryptocurrency was trading at $28,063, a 2.4% increase in the past 24 hours. The price reached $28,459 at its highest point during the day before trading at $26,877 during the day’s low. Overall this week, Bitcoin has gained over 37% against the U.S. dollar. Bitcoin’s market capitalization added $194 billion in 2023, representing a 66% gain year-to-date, outperforming Wall Street banks stocks, especially with fears of a global banking crisis rising. Bitcoin is up about 65% so far this year, versus the S&P 500’s 2.5% gain and Nasdaq’s 15% decline in 2023.",
+            "author": "Georgina Lee",
+            "imgUrl": "https://www.reuters.com/resizer/yxWyy3-JynWeDuhrB-PhsXFnXoI=/960x0/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/3AN46CLSDZP73DYFVIDMK4AD54.jpg",
+            "category": "crypto"
+        }
+    ]
+}

@@ -40,6 +40,7 @@
     padding: .2em;
     font-size: .6em;
     cursor: pointer;
+    transition: background cubic-bezier(1, 1, 1, 1) 500ms;
 }
 
 @media (min-width: 768px) {
