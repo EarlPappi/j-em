@@ -8,6 +8,7 @@ import Contact from './pages/Contact';
 import Blogue from './pages/Blogue';
 import Services from './pages/Services';
 import Error404 from './pages/Error404';
+import BlogDetails from './pages/BlogDetails';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path='/a-propos' element={<Apropos />} />
         <Route path='/contactez-nous' element={<Contact />} />
         <Route path='/blogue' element={<Blogue />} />
+        <Route path='/blogue/:blogId' element={<BlogDetails/>} />
         <Route path='/services' element={<Services />} />
         <Route path='/*' element={<Error404 />} />
 
