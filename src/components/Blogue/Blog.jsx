@@ -10,7 +10,7 @@ import classes from "./Blog.module.css";
 import SingleBlog from "./SingleBlog";
 
 function Blog() {
-  const [selectedCategory, setSelectedCategory] = useState("all");
+  const [selectedCategory, setSelectedCategory] = useState("");
   const blogCat = ["all", "auto", "finance", "tech", "crypto"];
   const [active, setActive] = useState(blogCat[0]);
   const [ment, setMent] = useState("BLOGUE");
@@ -39,8 +39,15 @@ function Blog() {
 
   let fetchedBlog = data?.data;
 
-  console.log("isLoading: ", isLoading);
-
+  const filteredCat = fetchedBlog?.filter((item) => {
+    if (item.category === selectedCategory) {
+      return true;
+    } else if (selectedCategory === "") {
+      return true;
+    }
+    return false;
+  });
+  
   return (
     <div className={classes.blogMainCon}>
       <Wrapper>
@@ -63,7 +70,12 @@ function Blog() {
                       className={classes.catTitle}
                       onClick={() => {
                         setActive(cat);
-                        setSelectedCategory(cat);
+                        if (cat === "all") {
+                          setSelectedCategory("");
+                          return;
+                        } else {
+                          setSelectedCategory(cat);
+                        }
                         console.log("Selected Cat: ", selectedCategory);
                       }}
                     >
@@ -76,29 +88,27 @@ function Blog() {
 
             <div>
               {(isLoading || isFetching) && (
-                <div className={ classes.fetchRes }>
+                <div className={classes.fetchRes}>
                   <ClockLoader />
                   <p>Fetching Blogs</p>
                 </div>
               )}
 
               {isError && (
-                <div className={ classes.fetchRes }>
+                <div className={classes.fetchRes}>
                   <pre>{error.message}</pre>
                   <p>
                     We encountered the error above, kindly refresh to try again
                   </p>
 
                   <button onClick={refetch}>Refresh</button>
-
-
                 </div>
               )}
 
               {/* Category news */}
               {!isLoading && !isFetching && (
                 <div className={classes.newsGrid}>
-                  {fetchedBlog?.map((blog) => {
+                  {filteredCat?.map((blog) => {
                     return <SingleBlog blog={blog} />;
                   })}
                 </div>

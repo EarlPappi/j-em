@@ -57,10 +57,25 @@
 
 .newsGrid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     row-gap: 2em;
     column-gap: 2em;
+    grid-auto-rows: 1fr;
 }
+
+@media (min-width:768px) {
+    .newsGrid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width:1024px) {
+    .newsGrid{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
 
 .fetchRes{
     display: flex;
