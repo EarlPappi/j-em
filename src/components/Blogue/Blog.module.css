@@ -61,3 +61,20 @@
     row-gap: 2em;
     column-gap: 2em;
 }
+
+.fetchRes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    margin-top: 10%;
+}
+
+.fetchRes button{
+    background-color: #4393FF;
+    color: white;
+    padding: .5em 2em;
+    border: none;
+    border-radius: 5px;
+}

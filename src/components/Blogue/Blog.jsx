@@ -2,12 +2,12 @@ import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 import React from "react";
 import { useState } from "react";
+import { ClockLoader } from "react-spinners";
 import { useFetchBlog } from "../../hooks/useFetchBlog";
 import InnerWrapper from "../wrapper/InnerWrapper";
 import Wrapper from "../wrapper/Wrapper";
 import classes from "./Blog.module.css";
 import SingleBlog from "./SingleBlog";
-
 
 function Blog() {
   const [selectedCategory, setSelectedCategory] = useState("all");
@@ -27,7 +27,7 @@ function Blog() {
     return axios.get("http://localhost:8000/blogs");
   }
 
-  const { isLoading, data, isFetching } = useQuery({
+  const { isLoading, data, isFetching, error, isError, refetch } = useQuery({
     queryKey: ["blogs"],
     queryFn: fetchFn,
     // onSuccess: () => {
@@ -75,12 +75,26 @@ function Blog() {
             </div>
 
             <div>
-              {isLoading ||
-                isFetching && (
-                  <div>
-                    <ClockLoader />
-                  </div>
-                )}
+              {(isLoading || isFetching) && (
+                <div className={ classes.fetchRes }>
+                  <ClockLoader />
+                  <p>Fetching Blogs</p>
+                </div>
+              )}
+
+              {isError && (
+                <div className={ classes.fetchRes }>
+                  <pre>{error.message}</pre>
+                  <p>
+                    We encountered the error above, kindly refresh to try again
+                  </p>
+
+                  <button onClick={refetch}>Refresh</button>
+
+
+                </div>
+              )}
+
               {/* Category news */}
               {!isLoading && !isFetching && (
                 <div className={classes.newsGrid}>
