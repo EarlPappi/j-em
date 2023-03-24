@@ -13,3 +13,13 @@ text-decoration: none;
     flex-direction: column;
     justify-content: space-between;
 }
+
+.innerCon p{
+    font-size: .7em;
+    font-weight: 300;
+    line-height: 150%;
+}
+
+.singleBlogCon{
+    transition: all linear 2000;
+}

@@ -9,7 +9,7 @@ function SingleBlog({ blog }) {
         <div>
           <img src={blog.imgUrl} alt={blog.title} width="100%" />
         </div>
-        {blog.title}
+        <p>{blog.title}</p> 
       </div>
 
       <Link to={`/blogue/${blog.id}`}>Read More</Link>

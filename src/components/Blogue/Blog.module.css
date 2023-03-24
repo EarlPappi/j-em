@@ -61,6 +61,7 @@
     row-gap: 2em;
     column-gap: 2em;
     grid-auto-rows: 1fr;
+    margin-top: 2em;
 }
 
 @media (min-width:768px) {

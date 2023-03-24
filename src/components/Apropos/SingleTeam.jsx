@@ -1,9 +1,8 @@
-import React, { useState } from 'react'
 import classes from './SingleTeam.module.css'
 import { SunIcon } from '../../assets/Apropos/Icons';
 
 function SingleTeam({ singleTeam }) {
-  const [current, setCurrent] = useState(0);
+  // const [current, setCurrent] = useState(0);
   
   return (
     <div>

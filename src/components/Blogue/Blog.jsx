@@ -3,7 +3,6 @@ import axios from "axios";
 import React from "react";
 import { useState } from "react";
 import { ClockLoader } from "react-spinners";
-import { useFetchBlog } from "../../hooks/useFetchBlog";
 import InnerWrapper from "../wrapper/InnerWrapper";
 import Wrapper from "../wrapper/Wrapper";
 import classes from "./Blog.module.css";
@@ -13,7 +12,6 @@ function Blog() {
   const [selectedCategory, setSelectedCategory] = useState("");
   const blogCat = ["all", "auto", "finance", "tech", "crypto"];
   const [active, setActive] = useState(blogCat[0]);
-  const [ment, setMent] = useState("BLOGUE");
   // const [fetchedBlog, setFetchedBlog] = useState([]);
 
   // const option = {
@@ -47,7 +45,7 @@ function Blog() {
     }
     return false;
   });
-  
+
   return (
     <div className={classes.blogMainCon}>
       <Wrapper>
@@ -86,6 +84,7 @@ function Blog() {
               </div>
             </div>
 
+            {/* Blog grid  */}
             <div>
               {(isLoading || isFetching) && (
                 <div className={classes.fetchRes}>
