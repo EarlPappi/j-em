@@ -22,7 +22,7 @@ function Blog() {
   // }
 
   function fetchFn() {
-    return axios.get("http://localhost:8000/blogs");
+    return axios.get("https://my-json-server.typicode.com/EarlPappi/j-em/blogs");
   }
 
   const { isLoading, data, isFetching, error, isError, refetch } = useQuery({
