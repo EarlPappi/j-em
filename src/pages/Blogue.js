@@ -1,8 +1,11 @@
 import React from 'react'
+import Blog from '../components/Blogue/Blog'
 
 function Blogue() {
   return (
-    <div>Blogue</div>
+    <div>
+      <Blog/>
+    </div>
   )
 }
 
