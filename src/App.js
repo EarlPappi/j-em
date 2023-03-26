@@ -6,7 +6,7 @@ import Home from './pages/Home';
 import Apropos from './pages/Apropos';
 import Contact from './pages/Contact';
 import Blogue from './pages/Blogue';
-import Services from './pages/Services';
+import Realisation from './pages/Realisation';
 import Error404 from './pages/Error404';
 import BlogDetails from './pages/BlogDetails';
 
@@ -25,7 +25,7 @@ function App() {
         <Route path='/a-propos' element={<Apropos />} />
         <Route path='/contactez-nous' element={<Contact />} />
         <Route path='/blogue' element={<Blogue />} />
-        <Route path='/services' element={<Services />} />
+        <Route path='/realisation' element={<Realisation/>} />
         <Route path='/blogue/:blogId' element={<BlogDetails/>} />
         <Route path='/*' element={<Error404 />} />
 

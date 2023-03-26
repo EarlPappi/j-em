@@ -1,0 +1,17 @@
+.mainCon{
+    min-height: 100vh;
+    padding-top: 8%;
+    background: #BAC7D7;
+}
+
+.mainCon h1 {
+    font-size: 2.3em;
+    font-weight: 400;
+    padding-bottom: .6em;
+}
+
+@media (min-width: 768px) {
+    .mainCon h1 {
+        font-size: 3em;
+    }
+}
