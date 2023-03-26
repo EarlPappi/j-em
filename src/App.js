@@ -25,8 +25,8 @@ function App() {
         <Route path='/a-propos' element={<Apropos />} />
         <Route path='/contactez-nous' element={<Contact />} />
         <Route path='/blogue' element={<Blogue />} />
-        <Route path='/blogue/:blogId' element={<BlogDetails/>} />
         <Route path='/services' element={<Services />} />
+        <Route path='/blogue/:blogId' element={<BlogDetails/>} />
         <Route path='/*' element={<Error404 />} />
 
 
