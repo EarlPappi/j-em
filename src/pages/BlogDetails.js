@@ -1,12 +1,11 @@
-import React from 'react'
-import { useParams } from 'react-router-dom'
+import React from "react";
 
 function BlogDetails() {
-    const {blogId} = useParams()
-
   return (
-    <div>BlogDetails {blogId}</div>
-  )
+    <div>
+      <BlogDetails />
+    </div>
+  );
 }
 
-export default BlogDetails
+export default BlogDetails;

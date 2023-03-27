@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import classes from "./SingleBlog.module.css";
 
 function SingleBlog({ blog }) {
@@ -12,7 +11,7 @@ function SingleBlog({ blog }) {
         <p>{blog.title}</p> 
       </div>
 
-      <Link to={`/blogue/${blog.id}`}>Read More</Link>
+      {/* <Link to={`/`}>Headline - Go Home</Link> */}
     </div>
   );
 }

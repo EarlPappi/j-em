@@ -12,27 +12,15 @@ function Blog() {
   const [selectedCategory, setSelectedCategory] = useState("");
   const blogCat = ["all", "auto", "finance", "tech", "crypto"];
   const [active, setActive] = useState(blogCat[0]);
-  // const [fetchedBlog, setFetchedBlog] = useState([]);
-
-  // const option = {
-  //   isFetched: () => {
-  //     setFetchedBlog(data.data);
-  //     console.log("isFetched: ", fetchedBlog)
-  //   }
-  // }
 
   function fetchFn() {
+    // return axios.get("http://localhost:8000/blogs");
     return axios.get("https://my-json-server.typicode.com/EarlPappi/j-em/blogs");
   }
 
   const { isLoading, data, isFetching, error, isError, refetch } = useQuery({
     queryKey: ["blogs"],
-    queryFn: fetchFn,
-    // onSuccess: () => {
-    //   setFetchedBlog(data?.data);
-    // },
-    refetchOnMount: true,
-    refetchOnWindowFocus: true,
+    queryFn: fetchFn
   });
 
   let fetchedBlog = data?.data;
