@@ -9,6 +9,7 @@ import Blogue from './pages/Blogue';
 import Realisation from './pages/Realisation';
 import Error404 from './pages/Error404';
 import BlogDetails from './pages/BlogDetails';
+import AdminBlog from './components/Blogue/AdminBlog';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path='/blogue' element={<Blogue />} />
         <Route path='/realisation' element={<Realisation/>} />
         <Route path='/blogue/:blogId' element={<BlogDetails/>} />
+        <Route path='/adminBlog' element={<AdminBlog/>} />
         <Route path='/*' element={<Error404 />} />
 
 
