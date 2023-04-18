@@ -5,7 +5,9 @@ import Header from '../components/Realisation/Header'
 import { decrement, increment, incrementAmount } from '../store/slices/counterSlice';
 
 function Realisation() {
-  const currValue = useSelector((state)=> state.counter.value);
+  const currValue = useSelector((state)=> state.counter);
+
+  console.log(currValue)
   const dispatch = useDispatch();
   const [amount, setAmount] = useState();
 
